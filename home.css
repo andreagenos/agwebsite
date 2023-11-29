@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.title{
+  margin-top: 5%;
+}
+.subtitle{
+  color: #00abf0;
+}
+body {
+    /*background-color: rgb(7, 46, 80); */
+    background-image: url(static/adelin-preda--tOr_T4qTpQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ededed;
+}
+.line {
+  width: 90%;
+  justify-content: center;
+  border-top: 2px solid #ccc; /* Border style for the line */
+  margin: 30px auto;
+}
+.container{
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards, slideInContainer 1s ease-out forwards; /* Apply multiple animations to the container */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInContainer {
+  from {
+    transform: translateY(-50px); /* You can adjust the translateY value for a smoother appearance */
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-box a {
+  display: inline-flex;
+  justify-content: center;
+  width: 160px;
+  height: 100%;
+  background: transparent;
+  border:1px solid #00abf0;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #00abf0;
+  text-decoration: none;
+  font-weight: 50;
+  letter-spacing: 1px;
+}
+
+.icon-box {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+/*.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: left;
+}*/
+
+.image{
+    width: 70%;
+    animation: fadeIn 1s ease-out forwards, slideInContainer 1s ease-out forwards;
+    border-radius: 8px;
+}
+
+.logo {
+    float: left; 
+    margin-left: 100px; 
+    margin-top: 0px;
+}
+
+.project-title {
+  color:rgb(7, 46, 80);
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+  .project {
+    margin-bottom: 40px;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .project-description {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .project-tools {
+    color: #777;
+  }
+
+  .project-link {
+    display: block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .project-link:hover {
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 932px) {
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .col-lg-6 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .container{
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards, slideInContainer 1s ease-out forwards; /* Apply multiple animations to the container */
+    }
+    
+    .image{
+      width: 100%;
+      animation: fadeIn 1s ease-out forwards, slideInContainer 1s ease-out forwards;
+      border-radius: 8px;
+      margin-top: 25%;
+    }
+    
+  }

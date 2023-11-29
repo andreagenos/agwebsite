@@ -1,0 +1,9 @@
+body {
+    /*background-color: rgb(7, 46, 80); */
+    background-image: url(../static/adelin-preda--tOr_T4qTpQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ededed;
+}
+
