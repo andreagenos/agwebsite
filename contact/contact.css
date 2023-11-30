@@ -6,11 +6,13 @@ body {
     background-attachment: fixed;
     color: #ededed;
 }
+
 .form-container {
     width: 40%;
     margin: 0px auto;
     margin-top: 100px;
     grid-template-columns: 1fr;
+
 }
 
 .form-section {
@@ -40,7 +42,7 @@ input {
     background-color: transparent;
     border-bottom: 1.5px solid #00abf0;
     outline: none;
-    color: white ;
+    color: white;
     font-size: 15px ;
 }
 
@@ -52,12 +54,15 @@ textarea {
     border-bottom: 1px solid #00abf0;
     outline: none;
     resize: vertical; /* Allow vertical resizing for the textarea */
-    color: white;
     font-size: 15px;
+    color: white;
+}
+.icon-text-container{
+    text-align: center;
 }
 
 .t-form{
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .btn-box a {
     display: inline-flex;
