@@ -6,12 +6,33 @@ body {
     background-attachment: fixed;
     color: #ededed;
 }
-
+.container{
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards, slideInContainer 1s ease-out forwards; /* Apply multiple animations to the container */
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInContainer {
+    from {
+      transform: translateY(-50px); /* You can adjust the translateY value for a smoother appearance */
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 .form-container {
     width: 40%;
     margin: 0px auto;
     margin-top: 100px;
     grid-template-columns: 1fr;
+
 
 }
 
@@ -75,8 +96,8 @@ textarea {
     border: 1px solid #00abf0;
     border-radius: 6px;
     font-size: 16px;
-    color: #00abf0 !important; /* Change text color to white */
-    font-weight: 500; /* Adjusted font weight for better visibility */
+    color: #00abf0 !important; 
+    font-weight: 500; 
     letter-spacing: 1px;
 }
 
