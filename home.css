@@ -76,25 +76,12 @@ body {
   margin-right: 5px;
 }
 
-/*.logo{
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
-    text-align: left;
-}*/
-
 .image{
     width: 70%;
     animation: fadeIn 1s ease-out forwards, slideInContainer 1s ease-out forwards;
     border-radius: 8px;
 }
 
-.logo {
-    float: left; 
-    margin-left: 100px; 
-    margin-top: 0px;
-}
 
 .project-title {
   color:rgb(7, 46, 80);
